@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".GidisGelis"
+    android:id="@+id/pnl"
+   >
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtKlks"
+              android:textSize="30dp"
+              android:typeface="monospace"
+              android:textStyle="bold|italic"
+              android:textColor="#FFFFFF"
+              android:text="Lütfen Kalkacağınız yönü seçiniz."/>
+
+         <Spinner android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/spngdsgls"
+                  android:prompt="@string/prmt"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtGidis"
+              android:textSize="30dp"
+              android:typeface="monospace"
+              android:textColor="#FFFFFF"
+              android:textStyle="bold|italic"
+              android:text="Lütfen gideceğiniz yönü seçiniz."/>
+
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/spnglsgds"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGdsGls"
+            android:background="@drawable/button_style_01"
+            android:textColor="#FFFFFF"
+            android:onClick="btn_BiletBul"
+            android:text="Bilet Bul"/>
+
+
+            <Button android:id="@+id/btnYeniİslem"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_style_01"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textColor="#FFFFFF"
+                android:text="Yeniden Seçim"/>
+
+
+</LinearLayout>

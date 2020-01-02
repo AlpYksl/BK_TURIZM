@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BK_TURIZM</string>
+    <string name="strAccount">Hesabım</string>
+    <string name="strHelp">Yardım</string>
+    <string name="prmt">Seçiniz</string>
+    <string name="prompt_departure_date">Tarih seçiniz</string>
+</resources>

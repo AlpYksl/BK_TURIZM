@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/launch"
+    android:background="#FF8C00"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BK TURIZM"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:typeface="serif"
+        android:fontFamily="cursive"
+        android:layout_marginTop="150dp"
+        android:textSize="80dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar_cyclic"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="150dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:minWidth="20dp"
+        android:minHeight="10dp"
+        android:src="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"/>
+
+</RelativeLayout>

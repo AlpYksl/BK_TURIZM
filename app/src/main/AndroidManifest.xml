@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bk_turizm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Profil"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".GidisGelisDonusTarife" />
+        <activity android:name=".GidisGelisOnay" />
+        <activity android:name=".GidisGelisBiletTarife" />
+        <activity android:name=".Rezervasyonlar" />
+        <activity android:name=".GirisActivity" />
+        <activity android:name=".KayitActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".BiletTarife"
+            android:parentActivityName=".TekYon" />
+        <activity android:name=".OnaySayfasi" />
+        <activity android:name=".GidisGelis"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".TekYon"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AcilisEkrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

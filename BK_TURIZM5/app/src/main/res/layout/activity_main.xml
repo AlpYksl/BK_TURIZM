@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/pnl"
+    android:fillViewport="true"
+    android:background="@drawable/photobackground"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pnll">
+<TableRow>
+    <AnalogClock
+            android:id="@+id/simpleAnalogClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="50dp" />
+</TableRow>
+
+        <TableRow>
+
+            <DigitalClock
+                android:id="@+id/simpleDigitalClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textStyle="italic|bold"
+                android:textColor="@android:color/primary_text_dark"
+                android:typeface="serif"
+                android:textSize="24dp"
+                android:id="@+id/txtMain"/>
+        </TableRow>
+  <TableRow android:layout_marginTop="50dp">
+      <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="250dp">
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/btnTekYon"
+                     android:onClick="tek_YonClick"
+                     android:src="@drawable/tekyon"/>
+
+          <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Tek Yön"
+                    android:textSize="45dp"
+                    android:textColor="#FFFFFF"/>
+      </FrameLayout>
+  </TableRow>
+
+    <TableRow>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            <ImageButton android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnGidisGelis"
+                         android:onClick="ciftYonClick"
+                         android:src="@drawable/gdsgls"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="30dp"
+                      android:text="Gidiş Geliş"
+                      android:textSize="45dp"
+                      android:textColor="#FFFFFF"/>
+        </FrameLayout>
+    </TableRow>
+    <TableRow>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp">
+
+            <ImageButton android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUyelik"
+                android:onClick="rezerv_Click"
+                android:background="#3090C7"
+                android:src="@drawable/res"/>
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Rezervasyonlarım"
+                android:textSize="45dp"
+                android:textColor="#FFFFFF"/>
+        </FrameLayout>
+    </TableRow>
+    </TableLayout>
+</ScrollView>

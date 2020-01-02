@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pnlOnay"
+        android:background="#3090C7"
+        tools:context=".OnaySayfasi">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/dogruResim"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/onaylamaisareti"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_below="@+id/dogruResim"
+        android:text="Aldığınız bileti
+        anasayfada rezervasyonlar sekmesinde
+        görebilirsiniz."/>
+    <TextView
+        android:id="@+id/txtOnay"
+        android:layout_width="399dp"
+        android:layout_height="150dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/onayButonlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOnay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dp"
+        android:layout_weight="3">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_01"
+            android:id="@+id/btnİptal"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="100dp"
+            android:onClick="btnİptal"
+            android:text="İptal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_style_01"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/btnİptal"
+            android:onClick="btn_BiletOnay"
+            android:id="@+id/onaylama"
+            android:text="ONAYLA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anasayfa_click"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style_01"
+            android:layout_toRightOf="@id/onaylama"
+            android:id="@+id/anasayfa"
+            android:text="ANA SAYFAYA DÖN"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

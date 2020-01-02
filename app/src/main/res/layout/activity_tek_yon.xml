@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TekYon"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lütfen kalkış için konum seçiniz."
+        android:textStyle="bold|italic"
+        android:typeface="monospace"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:id="@+id/klkstxt"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spnkalkısSehirler"
+        android:prompt="@string/prmt"
+        android:spinnerMode="dropdown"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:typeface="monospace"
+        android:textColor="#FFFFFF"
+        android:text="Lütfen gidiş için konum seçiniz."
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:id="@+id/gdstxt"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spnGidisSehirler"
+        android:prompt="@string/prmt"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/btnBiletbul"
+        android:background="@drawable/button_style_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Bilet Bul"
+        android:onClick="tkyn_BiletBul"
+        />
+    <Button android:id="@+id/btnyeniİslem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_style_01"
+        android:visibility="invisible"
+        android:text="Yeniden Seçim"/>
+
+
+</LinearLayout>

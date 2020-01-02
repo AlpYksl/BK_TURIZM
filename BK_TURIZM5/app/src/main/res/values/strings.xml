@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BK_TURIZM</string>
+    <string name="prmt">Sehir seçiniz</string>
+    <string-array name="sehirler">
+        <item>İstanbul</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>İzmir</item>
+        <item>Şanlıurfa</item>
+        <item>Gaziantep</item>
+        <item>Bursa</item>
+        <item>Edirne</item>
+        <item>Bayburt</item>
+        <item>Kars</item>
+        <item>Rize</item>
+        <item>Trabzon</item>
+        <item>Bodrum</item>
+        <item>Sakarya</item>
+        <item>Adana</item>
+        <item>Diyarbakır</item>
+        <item>Çanakkale</item>
+        <item>Konya</item>
+        <item>Mersin</item>
+        <item>Ağrı</item>
+        <item>Ordu</item>
+    </string-array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pnlOnay"
+        android:background="#3090C7"
+        tools:context=".OnaySayfasi">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/dogruResim"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/onaylamaisareti"/>
+
+    <TextView
+        android:id="@+id/txtOnay"
+        android:layout_width="399dp"
+        android:layout_height="150dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/onayButonlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOnay"
+        android:layout_marginTop="150dp"
+        android:layout_weight="3">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnİptal"
+            android:layout_marginLeft="100dp"
+            android:onClick="btnİptal"
+            android:text="İptal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnİptal"
+            android:id="@+id/onay"
+            android:text="ONAYLA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anasayfa_click"
+            android:layout_toRightOf="@id/onay"
+            android:id="@+id/anasayfa"
+            android:text="ANA SAYFAYA DÖN"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
